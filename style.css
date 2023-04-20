@@ -73,7 +73,7 @@ button {
   cursor: pointer;
 }
 
-.btn:hover {
+.todo-app__btn:hover {
   color: #3a3A3a;
 }
 
