@@ -4,7 +4,7 @@
 //Problem: User interaction does not provide the correct results.
 //Solution: Add interactivity so the user can manage daily tasks.
 //Break things down into smaller steps and take each step at a time.
-
+console.log('Good day');
 
 // Event handling, user interaction is what starts the code execution.
 
