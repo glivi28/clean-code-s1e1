@@ -8,55 +8,56 @@
           media="screen" 
           charset="utf-8">
   </head>
-  <body>
-    <article class="aaa">
-      <img src="./eisenhower-matrix.jpg" alt="Picture of matrix model">
+  <body class="todo">
+    <article class="todo-post aaa">
+      <img class="todo-post__image" src="./eisenhower-matrix.jpg" alt="Picture of matrix model">
       <h4>
-        <a  class="more_inf" 
+        <a
+            class="todo-post__link more_inf" 
             href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?
         </a>
       </h4>
     </article>
-    <section class="centered-main-page-element">
-      <div id="topSectionForAddingElementToList">
-        <h3>Add Item</h3>
-        <div class="task-row-wrapper">
+    <section class="todo-app todo-app_centered centered-main-page-element">
+      <div class="tasks-add">
+        <h3 class="todo-app__title">Add Item</h3>
+        <div class="tasks-add__row">
           <input 
-              id="new-task" 
-              class="task" 
+              id="tasks-add__new" 
+              class="todo-app__task todo-app__task_input" 
               type="text">
-          <button>Add</button>
+          <button class="todo-app__btn">Add</button>
         </div>
       </div>
-      <h3>Todo</h3>
-      <ul id="incompleteTasks">
-        <li>
-          <input type="checkbox">
-          <label class="task">Pay Bills</label>
-          <input type="text" class="task">
-          <button class="edit">Edit</button>
-          <button class="delete">
+      <h3 class="todo-app__title">Todo</h3>
+      <ul class="todo-app__list" id="todo-app__list_actual">
+        <li class="todo-app__item">
+          <input class="todo-app__checkbox" type="checkbox">
+          <label class="todo-app__task">Pay Bills</label>
+          <input type="text" class="todo-app__task todo-app__task_input">
+          <button class="todo-app__btn todo-app__btn_edit">Edit</button>
+          <button class="todo-app__btn todo-app__btn_delete">
             <img src="./remove.svg" alt="Delete icon">
           </button>
         </li>
-        <li class="editMode">
-          <input type="checkbox">
-          <label class="task">Go Shopping</label>
-          <input type="text" value="Go Shopping" class="task">
-          <button class="edit">Save</button>
-          <button class="delete">
+        <li class="todo-app__item todo-app__item_edit-mode">
+          <input class="todo-app__checkbox" type="checkbox">
+          <label class="todo-app__task">Go Shopping</label>
+          <input type="text" value="Go Shopping" class="todo-app__task todo-app__task_input">
+          <button class="todo-app__btn todo-app__btn_edit">Save</button>
+          <button class="todo-app__btn todo-app__btn_delete">
             <img src="./remove.svg" alt="Delete icon">
           </button>
         </li>
       </ul>
-      <h3>Completed</h3>
-      <ul id="completed-tasks">
-        <li>
-          <input type="checkbox" checked>
-          <label class="task">See the Doctor</label>
-          <input type="text" class="task">
-          <button class="edit">Edit</button>
-          <button class="delete">
+      <h3 class="todo-app__title">Completed</h3>
+      <ul class="todo-app__list" id="todo-app__list_completed">
+        <li class="todo-app__item">
+          <input class="todo-app__checkbox" type="checkbox" checked>
+          <label class="todo-app__task">See the Doctor</label>
+          <input type="text" class="todo-app__task todo-app__task_input">
+          <button class="todo-app__btn todo-app__btn_edit">Edit</button>
+          <button class="todo-app__btn todo-app__btn_delete">
             <img src="./remove.svg" alt="Delete icon">
           </button>
         </li>
